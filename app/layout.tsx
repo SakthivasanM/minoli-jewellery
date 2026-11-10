@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico' },
-      { url: '/icon.png', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/icon.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: [
       { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
@@ -37,14 +39,20 @@ export const metadata: Metadata = {
     siteName: 'MINOLI',
     images: [
       {
-        url: '/images/hero/hero-main.jpg',
+        url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'MINOLI Fine Jewellery Collection',
+        alt: 'MINOLI Haute Joaillerie – Handcrafted Luxury Fine Jewellery',
       },
     ],
     locale: 'en_IN',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MINOLI | Haute Joaillerie – Luxury Handcrafted Jewellery',
+    description: 'Elegance That Speaks Without Words. Explore our latest bridal and everyday fine jewellery collections.',
+    images: ['/images/og-image.jpg'],
   },
 };
 

@@ -72,23 +72,24 @@ export function Header({ onOpenSearch }: HeaderProps) {
             </button>
           </div>
 
-          {/* Brand Logo with Image */}
+          {/* Brand Logo with Pristine Crest */}
           <div className="flex-1 lg:flex-initial flex justify-center lg:justify-start">
-            <Link href="/" className="flex items-center space-x-2.5 sm:space-x-3 group focus:outline-none">
-              <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden border border-champagne-500/50 shadow-xs shrink-0 bg-white group-hover:border-champagne-600 transition-colors">
+            <Link href="/" className="flex items-center space-x-3 group focus:outline-none py-1">
+              <div className="relative w-11 h-11 sm:w-12 sm:h-12 shrink-0 drop-shadow-sm group-hover:scale-105 transition-transform duration-300">
                 <Image
-                  src="/images/Logo/Media.jpg"
-                  alt="MINOLI Logo"
+                  src="/images/Logo/minoli-crest-hq.png"
+                  alt="MINOLI Royal Crest"
                   fill
-                  sizes="44px"
-                  className="object-cover"
+                  sizes="48px"
+                  className="object-contain"
+                  priority
                 />
               </div>
-              <div className="text-left">
-                <span className="block font-serif text-xl sm:text-2xl tracking-[0.22em] font-medium text-charcoal-900 group-hover:text-champagne-600 transition-colors leading-none">
+              <div className="flex flex-col justify-center text-left">
+                <span className="font-serif text-xl sm:text-2xl lg:text-[26px] tracking-[0.24em] font-normal text-charcoal-950 group-hover:text-champagne-700 transition-colors leading-none">
                   MINOLI
                 </span>
-                <span className="block text-[8px] sm:text-[9px] tracking-[0.35em] uppercase text-champagne-600 font-sans font-light mt-1">
+                <span className="text-[8px] sm:text-[9px] tracking-[0.42em] uppercase text-champagne-700 font-sans font-medium mt-1.5 leading-none">
                   Haute Joaillerie
                 </span>
               </div>
@@ -257,22 +258,22 @@ export function Header({ onOpenSearch }: HeaderProps) {
           {/* Drawer content */}
           <div className="fixed inset-y-0 left-0 max-w-xs w-full bg-white shadow-xl z-50 flex flex-col justify-between overflow-y-auto">
             <div>
-              <div className="p-5 border-b border-ivory-300 flex items-center justify-between">
-                <div className="flex items-center space-x-2.5">
-                  <div className="relative w-8 h-8 rounded-full overflow-hidden border border-champagne-500/50 shrink-0">
+              <div className="p-5 border-b border-ivory-300 flex items-center justify-between bg-ivory-50/50">
+                <div className="flex items-center space-x-3">
+                  <div className="relative w-10 h-10 shrink-0">
                     <Image
-                      src="/images/Logo/Media.jpg"
+                      src="/images/Logo/minoli-crest-hq.png"
                       alt="MINOLI Logo"
                       fill
-                      sizes="32px"
-                      className="object-cover"
+                      sizes="40px"
+                      className="object-contain"
                     />
                   </div>
                   <div>
-                    <span className="font-serif text-lg tracking-[0.2em] font-medium text-charcoal-900 leading-none block">
+                    <span className="font-serif text-lg tracking-[0.22em] font-medium text-charcoal-900 leading-none block">
                       MINOLI
                     </span>
-                    <span className="block text-[8px] tracking-[0.3em] uppercase text-champagne-600 mt-0.5">
+                    <span className="block text-[8px] tracking-[0.35em] uppercase text-champagne-700 font-sans mt-1">
                       Haute Joaillerie
                     </span>
                   </div>
