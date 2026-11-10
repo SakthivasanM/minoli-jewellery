@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Search, Heart, ShoppingBag, Menu, X, MessageCircle, ChevronDown } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
@@ -71,15 +72,26 @@ export function Header({ onOpenSearch }: HeaderProps) {
             </button>
           </div>
 
-          {/* Brand Logo */}
-          <div className="flex-1 lg:flex-initial text-center lg:text-left">
-            <Link href="/" className="inline-block group focus:outline-none">
-              <span className="block font-serif text-2xl sm:text-3xl lg:text-3xl tracking-[0.25em] font-medium text-charcoal-900 group-hover:text-champagne-600 transition-colors">
-                MINOLI
-              </span>
-              <span className="block text-[8px] sm:text-[9px] tracking-[0.4em] uppercase text-champagne-600 text-center font-sans font-light">
-                Haute Joaillerie
-              </span>
+          {/* Brand Logo with Image */}
+          <div className="flex-1 lg:flex-initial flex justify-center lg:justify-start">
+            <Link href="/" className="flex items-center space-x-2.5 sm:space-x-3 group focus:outline-none">
+              <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden border border-champagne-500/50 shadow-xs shrink-0 bg-white group-hover:border-champagne-600 transition-colors">
+                <Image
+                  src="/images/Logo/Media.jpg"
+                  alt="MINOLI Logo"
+                  fill
+                  sizes="44px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="text-left">
+                <span className="block font-serif text-xl sm:text-2xl tracking-[0.22em] font-medium text-charcoal-900 group-hover:text-champagne-600 transition-colors leading-none">
+                  MINOLI
+                </span>
+                <span className="block text-[8px] sm:text-[9px] tracking-[0.35em] uppercase text-champagne-600 font-sans font-light mt-1">
+                  Haute Joaillerie
+                </span>
+              </div>
             </Link>
           </div>
 
@@ -246,13 +258,24 @@ export function Header({ onOpenSearch }: HeaderProps) {
           <div className="fixed inset-y-0 left-0 max-w-xs w-full bg-white shadow-xl z-50 flex flex-col justify-between overflow-y-auto">
             <div>
               <div className="p-5 border-b border-ivory-300 flex items-center justify-between">
-                <div>
-                  <span className="font-serif text-xl tracking-[0.2em] font-medium text-charcoal-900">
-                    MINOLI
-                  </span>
-                  <span className="block text-[8px] tracking-[0.3em] uppercase text-champagne-600">
-                    Haute Joaillerie
-                  </span>
+                <div className="flex items-center space-x-2.5">
+                  <div className="relative w-8 h-8 rounded-full overflow-hidden border border-champagne-500/50 shrink-0">
+                    <Image
+                      src="/images/Logo/Media.jpg"
+                      alt="MINOLI Logo"
+                      fill
+                      sizes="32px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div>
+                    <span className="font-serif text-lg tracking-[0.2em] font-medium text-charcoal-900 leading-none block">
+                      MINOLI
+                    </span>
+                    <span className="block text-[8px] tracking-[0.3em] uppercase text-champagne-600 mt-0.5">
+                      Haute Joaillerie
+                    </span>
+                  </div>
                 </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}

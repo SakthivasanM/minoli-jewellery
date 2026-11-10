@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { MessageCircle, X } from 'lucide-react';
 import { WHATSAPP_CONFIG } from '@/lib/whatsapp';
 
@@ -17,8 +18,14 @@ export function FloatingWhatsApp() {
           <div className="bg-charcoal-900 text-white p-4 flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <div className="w-10 h-10 rounded-full bg-champagne-600 flex items-center justify-center text-white font-serif font-semibold text-lg">
-                  M
+                <div className="relative w-10 h-10 rounded-full overflow-hidden border border-champagne-400/60 bg-white">
+                  <Image
+                    src="/images/Logo/Media.jpg"
+                    alt="MINOLI Logo"
+                    fill
+                    sizes="40px"
+                    className="object-cover"
+                  />
                 </div>
                 <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full ring-2 ring-charcoal-900" />
               </div>

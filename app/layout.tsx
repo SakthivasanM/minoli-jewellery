@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   title: 'MINOLI | Haute Joaillerie – Handcrafted Luxury Jewellery',
   description:
     'Discover timeless jewellery designed to celebrate every beautiful moment. Explore uncut Polki chokers, heritage temple kadas, diamond solitaires, and everyday waterproof gold chains. Order direct via WhatsApp.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: ['/favicon.ico'],
+  },
   keywords: [
     'MINOLI jewellery',
     'haute joaillerie',

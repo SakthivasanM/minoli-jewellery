@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   MessageCircle,
   Phone,
@@ -101,13 +102,24 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand Info & Story */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block group mb-4">
-              <span className="block font-serif text-2xl tracking-[0.25em] font-medium text-white group-hover:text-champagne-400 transition-colors">
-                MINOLI
-              </span>
-              <span className="block text-[9px] tracking-[0.4em] uppercase text-champagne-400 font-sans">
-                Haute Joaillerie
-              </span>
+            <Link href="/" className="inline-flex items-center space-x-3 group mb-4">
+              <div className="relative w-11 h-11 rounded-full overflow-hidden border border-champagne-500/50 shadow-sm shrink-0 bg-white">
+                <Image
+                  src="/images/Logo/Media.jpg"
+                  alt="MINOLI Logo"
+                  fill
+                  sizes="44px"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <span className="block font-serif text-2xl tracking-[0.25em] font-medium text-white group-hover:text-champagne-400 transition-colors leading-none">
+                  MINOLI
+                </span>
+                <span className="block text-[9px] tracking-[0.4em] uppercase text-champagne-400 font-sans mt-1">
+                  Haute Joaillerie
+                </span>
+              </div>
             </Link>
             <p className="text-xs text-charcoal-300 leading-relaxed max-w-sm mb-6">
               MINOLI designs heirloom jewellery celebrating quiet luxury and Indian regal heritage. From heritage uncut Polki suites to everyday waterproof gold chains, each piece is crafted for your most cherished moments.
