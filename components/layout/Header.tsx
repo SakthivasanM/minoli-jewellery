@@ -72,27 +72,18 @@ export function Header({ onOpenSearch }: HeaderProps) {
             </button>
           </div>
 
-          {/* Brand Logo with Pristine Crest */}
+          {/* Brand Logo */}
           <div className="flex-1 lg:flex-initial flex justify-center lg:justify-start">
-            <Link href="/" className="flex items-center space-x-3 group focus:outline-none py-1">
-              <div className="relative w-11 h-11 sm:w-12 sm:h-12 shrink-0 drop-shadow-sm group-hover:scale-105 transition-transform duration-300">
-                <Image
-                  src="/images/Logo/minoli-crest-hq.png"
-                  alt="MINOLI Royal Crest"
-                  fill
-                  sizes="48px"
-                  className="object-contain"
-                  priority
-                />
-              </div>
-              <div className="flex flex-col justify-center text-left">
-                <span className="font-serif text-xl sm:text-2xl lg:text-[26px] tracking-[0.24em] font-normal text-charcoal-950 group-hover:text-champagne-700 transition-colors leading-none">
-                  MINOLI
-                </span>
-                <span className="text-[8px] sm:text-[9px] tracking-[0.42em] uppercase text-champagne-700 font-sans font-medium mt-1.5 leading-none">
-                  Haute Joaillerie
-                </span>
-              </div>
+            <Link href="/" className="group focus:outline-none py-1">
+              <Image
+                src="/images/Logo/minoli-wordmark.png"
+                alt="MINOLI Haute Joaillerie"
+                width={508}
+                height={144}
+                sizes="(min-width: 1024px) 208px, 176px"
+                className="w-44 sm:w-48 lg:w-52 h-auto group-hover:scale-[1.02] transition-transform duration-300"
+                priority
+              />
             </Link>
           </div>
 
@@ -259,24 +250,15 @@ export function Header({ onOpenSearch }: HeaderProps) {
           <div className="fixed inset-y-0 left-0 max-w-xs w-full bg-white shadow-xl z-50 flex flex-col justify-between overflow-y-auto">
             <div>
               <div className="p-5 border-b border-ivory-300 flex items-center justify-between bg-ivory-50/50">
-                <div className="flex items-center space-x-3">
-                  <div className="relative w-10 h-10 shrink-0">
-                    <Image
-                      src="/images/Logo/minoli-crest-hq.png"
-                      alt="MINOLI Logo"
-                      fill
-                      sizes="40px"
-                      className="object-contain"
-                    />
-                  </div>
-                  <div>
-                    <span className="font-serif text-lg tracking-[0.22em] font-medium text-charcoal-900 leading-none block">
-                      MINOLI
-                    </span>
-                    <span className="block text-[8px] tracking-[0.35em] uppercase text-champagne-700 font-sans mt-1">
-                      Haute Joaillerie
-                    </span>
-                  </div>
+                <div>
+                  <Image
+                    src="/images/Logo/minoli-wordmark.png"
+                    alt="MINOLI Haute Joaillerie"
+                    width={508}
+                    height={144}
+                    sizes="160px"
+                    className="w-40 h-auto"
+                  />
                 </div>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}

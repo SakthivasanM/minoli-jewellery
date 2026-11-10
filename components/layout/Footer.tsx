@@ -102,24 +102,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand Info & Story */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center space-x-3.5 group mb-5">
-              <div className="relative w-12 h-12 shrink-0 drop-shadow-md group-hover:scale-105 transition-transform duration-300">
-                <Image
-                  src="/images/Logo/minoli-crest-hq.png"
-                  alt="MINOLI Royal Crest"
-                  fill
-                  sizes="48px"
-                  className="object-contain"
-                />
-              </div>
-              <div>
-                <span className="block font-serif text-2xl lg:text-3xl tracking-[0.25em] font-normal text-white group-hover:text-champagne-400 transition-colors leading-none">
-                  MINOLI
-                </span>
-                <span className="block text-[9px] tracking-[0.45em] uppercase text-champagne-400 font-sans mt-1.5 font-light">
-                  Haute Joaillerie
-                </span>
-              </div>
+            <Link href="/" className="inline-flex mb-5">
+              <Image
+                src="/images/Logo/minoli-wordmark.png"
+                alt="MINOLI Haute Joaillerie"
+                width={508}
+                height={144}
+                sizes="224px"
+                className="w-56 h-auto"
+              />
             </Link>
             <p className="text-xs text-charcoal-300 leading-relaxed max-w-sm mb-6">
               MINOLI designs heirloom jewellery celebrating quiet luxury and Indian regal heritage. From heritage uncut Polki suites to everyday waterproof gold chains, each piece is crafted for your most cherished moments.
