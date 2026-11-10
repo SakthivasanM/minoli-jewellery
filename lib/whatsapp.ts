@@ -1,8 +1,8 @@
 import { Product, CartItem } from '@/types';
 
 export const WHATSAPP_CONFIG = {
-  phoneNumber: '919876543210', // Configurable business WhatsApp number
-  displayPhone: '+91 98765 43210',
+  phoneNumber: '919080025382', // Configurable business WhatsApp number
+  displayPhone: '+91 90800 25382',
   brandName: 'MINOLI',
   supportHours: 'Mon - Sat: 10:00 AM - 8:00 PM IST',
   email: 'concierge@minolijewels.com',
