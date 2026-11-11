@@ -30,7 +30,7 @@ export function ShopByCategory() {
             <Link
               key={category.id}
               href={`/shop?category=${category.id}`}
-              className="group relative block aspect-3/4 rounded-sm overflow-hidden bg-charcoal-900 shadow-soft transition-all duration-500 hover:shadow-luxury"
+              className="group relative block aspect-[3/4] min-h-[220px] rounded-sm overflow-hidden bg-charcoal-900 shadow-soft transition-all duration-500 hover:shadow-luxury"
             >
               {/* Category Image */}
               <Image

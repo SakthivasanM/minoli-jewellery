@@ -67,7 +67,7 @@ export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Gallery Column */}
             <div className="p-6 bg-ivory-50 flex flex-col justify-between">
-              <div className="relative aspect-4/5 w-full bg-white rounded-sm overflow-hidden border border-ivory-300 mb-4">
+              <div className="relative aspect-[4/5] min-h-[300px] w-full bg-white rounded-sm overflow-hidden border border-ivory-300 mb-4">
                 <Image
                   src={product.images[selectedImageIdx] || product.images[0]}
                   alt={product.name}

@@ -7,29 +7,30 @@ import { ArrowRight, Sparkles, Gem, ShieldCheck, HeartHandshake } from 'lucide-r
 
 export function BrandStory() {
   return (
-    <section className="py-24 bg-ivory-100/70 border-y border-ivory-300">
+    <section className="py-24 bg-ivory-100/80 border-y border-ivory-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Visual Column: Overlapping Luxury Editorial Images */}
+          {/* Visual Column: Signature Luxury Packaging Editorial */}
           <div className="relative">
-            <div className="relative aspect-4/5 w-full max-w-md mx-auto lg:max-w-none rounded-sm overflow-hidden shadow-luxury border-4 border-white">
+            <div className="relative aspect-[4/5] min-h-[320px] w-full max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
-                src="/images/hero/story-craft.jpg"
-                alt="MINOLI jewellery craftsmanship"
+                src="/images/Logo/BrandPackage.jpg"
+                alt="MINOLI Signature Luxury Unboxing & Packaging"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover transition-transform duration-700 hover:scale-105"
+                priority
               />
             </div>
 
-            {/* Overlapping smaller badge card */}
-            <div className="absolute -bottom-6 -right-2 sm:right-6 bg-charcoal-900 text-white p-5 rounded-sm shadow-2xl border border-champagne-500/30 max-w-xs hidden sm:block">
-              <div className="flex items-center space-x-2 text-champagne-400 mb-2">
-                <Sparkles className="w-4 h-4" />
-                <span className="text-[10px] uppercase tracking-widest font-semibold">Heirloom Standard</span>
+            {/* Overlapping smaller badge card in Royal Velvet Wine */}
+            <div className="absolute -bottom-6 -right-2 sm:right-6 bg-velvet-800 text-white p-5 rounded-xl shadow-2xl border border-champagne-400/40 max-w-xs hidden sm:block">
+              <div className="flex items-center space-x-2 text-champagne-300 mb-2">
+                <Sparkles className="w-4 h-4 text-champagne-300" />
+                <span className="text-[10px] uppercase tracking-widest font-semibold">Signature Unboxing</span>
               </div>
               <p className="font-serif text-sm font-medium leading-snug">
-                &ldquo;Every stone set by hand; every curve polished to perfection.&rdquo;
+                &ldquo;Encased in royal wine velvet and gold-sealed cashmere boxes with every creation.&rdquo;
               </p>
             </div>
           </div>

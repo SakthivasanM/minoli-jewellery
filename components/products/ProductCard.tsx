@@ -31,9 +31,9 @@ export function ProductCard({ product, onQuickView, priority = false }: ProductC
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image Container with Badges & Hover Actions */}
-      <div className="relative aspect-4/5 w-full bg-ivory-100 overflow-hidden">
+      <div className="relative aspect-[4/5] min-h-[260px] w-full bg-ivory-100 overflow-hidden">
         {/* Main Product Image */}
-        <Link href={`/product/${product.slug}`} className="block w-full h-full">
+        <Link href={`/product/${product.slug}`} className="block relative w-full h-full">
           <Image
             src={isHovered && hasMultipleImages ? product.images[1] : product.images[0]}
             alt={product.name}
@@ -44,20 +44,20 @@ export function ProductCard({ product, onQuickView, priority = false }: ProductC
           />
         </Link>
 
-        {/* Status Badges */}
+        {/* Status Badges in Authentic Brand Palette */}
         <div className="absolute top-2.5 left-2.5 flex flex-col gap-1.5 z-10">
           {product.isBestSeller && (
-            <span className="bg-charcoal-900 text-champagne-400 text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-xs shadow-xs">
+            <span className="bg-velvet-900 text-champagne-300 border border-champagne-400/30 text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-sm shadow-xs">
               Best Seller
             </span>
           )}
           {product.isNewArrival && !product.isBestSeller && (
-            <span className="bg-champagne-600 text-white text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-xs shadow-xs">
+            <span className="bg-champagne-600 text-white text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-sm shadow-xs">
               New Arrival
             </span>
           )}
           {product.discountPercent && (
-            <span className="bg-rose-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-xs shadow-xs">
+            <span className="bg-velvet-700 text-white text-[10px] font-bold px-2 py-0.5 rounded-sm shadow-xs">
               -{product.discountPercent}%
             </span>
           )}

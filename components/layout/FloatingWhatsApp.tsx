@@ -18,13 +18,13 @@ export function FloatingWhatsApp() {
           <div className="bg-charcoal-900 text-white p-4 flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <div className="relative w-11 h-11 shrink-0">
+                <div className="relative w-11 h-11 shrink-0 rounded-full overflow-hidden border border-champagne-400/80 shadow-xs ring-2 ring-charcoal-800 bg-ivory-100">
                   <Image
-                    src="/images/Logo/minoli-crest-hq.png"
+                    src="/images/Logo/Brandemblem.jpg"
                     alt="MINOLI Concierge"
                     fill
                     sizes="44px"
-                    className="object-contain"
+                    className="object-cover"
                   />
                 </div>
                 <span className="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full ring-2 ring-charcoal-900" />

@@ -61,7 +61,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="relative aspect-4/5 rounded-sm overflow-hidden shadow-luxury border-4 border-white">
+          <div className="relative aspect-[4/5] min-h-[320px] rounded-sm overflow-hidden shadow-luxury border-4 border-white">
             <Image
               src="/images/hero/story-craft.jpg"
               alt="MINOLI design process"

@@ -15,6 +15,7 @@ import {
   ChevronRight,
   Share2,
   Check,
+  Gift,
 } from 'lucide-react';
 import { Product } from '@/types';
 import { ProductCard } from '@/components/products/ProductCard';
@@ -118,7 +119,7 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
             )}
 
             {/* Main Featured Image */}
-            <div className="relative flex-1 aspect-4/5 rounded-sm overflow-hidden bg-ivory-100 border border-ivory-300 shadow-soft group">
+            <div className="relative flex-1 aspect-[4/5] min-h-[380px] rounded-sm overflow-hidden bg-ivory-100 border border-ivory-300 shadow-soft group">
               <Image
                 src={product.images[activeImageIdx] || product.images[0]}
                 alt={product.name}
@@ -421,17 +422,29 @@ export function ProductDetailClient({ product, relatedProducts }: ProductDetailC
               </ul>
             </div>
 
-            <div className="bg-ivory-100/60 p-6 rounded-sm border border-ivory-300">
-              <h3 className="font-serif text-base font-semibold text-charcoal-900 mb-3 flex items-center">
-                <Truck className="w-4 h-4 text-champagne-600 mr-2" />
-                Packaging & Delivery
-              </h3>
-              <p className="text-xs text-charcoal-600 leading-relaxed mb-3">
-                Every MINOLI piece arrives encased in our signature champagne gold and deep charcoal velvet presentation box, complete with a tamper-evident seal and Certificate of Authenticity.
-              </p>
-              <p className="text-xs font-semibold text-charcoal-900">
-                Delivery: 2 - 4 Business Days across India.
-              </p>
+            <div className="bg-ivory-100/70 p-6 rounded-xl border border-ivory-300 flex flex-col sm:flex-row items-center gap-5">
+              <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden border border-champagne-300/60 shadow-md shrink-0">
+                <Image
+                  src="/images/Logo/BrandPackage.jpg"
+                  alt="MINOLI Signature Packaging"
+                  fill
+                  sizes="112px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex-1 text-center sm:text-left">
+                <h3 className="font-serif text-base font-semibold text-charcoal-900 mb-1.5 flex items-center justify-center sm:justify-start">
+                  <Gift className="w-4 h-4 text-champagne-600 mr-2" />
+                  Signature Luxury Packaging
+                </h3>
+                <p className="text-xs text-charcoal-600 leading-relaxed mb-2">
+                  Every creation arrives encased in our signature Cashmere Gift Box lined with Royal Wine Velvet, complemented by a gold-foiled seal, suede travel pouch, and Certificate of Authenticity.
+                </p>
+                <p className="text-xs font-semibold text-charcoal-900 flex items-center justify-center sm:justify-start">
+                  <Truck className="w-3.5 h-3.5 text-champagne-600 mr-1.5" />
+                  <span>Complimentary Insured Delivery: 2 - 4 Business Days</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -73,10 +73,10 @@ export function Footer() {
             </div>
             <div>
               <h5 className="font-serif text-sm font-medium text-white tracking-wide">
-                Certified Authenticity
+                Signature Luxury Unboxing
               </h5>
               <p className="text-xs text-charcoal-300 mt-0.5">
-                Hypoallergenic, skin-safe, with hallmark warranty card.
+                Encased in royal wine velvet, suede pouch & gold seal box.
               </p>
             </div>
           </div>
@@ -102,15 +102,24 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand Info & Story */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex mb-5">
-              <Image
-                src="/images/Logo/minoli-wordmark.png"
-                alt="MINOLI Haute Joaillerie"
-                width={508}
-                height={144}
-                sizes="224px"
-                className="w-56 h-auto"
-              />
+            <Link href="/" className="inline-flex items-center space-x-3 mb-5 group" aria-label="MINOLI Home">
+              <div className="relative w-11 h-11 rounded-xl overflow-hidden border border-champagne-500/60 shadow-xs ring-1 ring-charcoal-700 bg-ivory-100 flex-shrink-0 group-hover:scale-105 transition-transform">
+                <Image
+                  src="/images/Logo/Brandemblem.jpg"
+                  alt="MINOLI Emblem"
+                  fill
+                  sizes="44px"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <span className="font-serif text-2xl font-semibold tracking-[0.2em] text-white block leading-tight group-hover:text-champagne-400 transition-colors">
+                  MINOLI
+                </span>
+                <span className="text-[9px] tracking-[0.32em] uppercase text-champagne-400 font-medium block">
+                  Haute Joaillerie
+                </span>
+              </div>
             </Link>
             <p className="text-xs text-charcoal-300 leading-relaxed max-w-sm mb-6">
               MINOLI designs heirloom jewellery celebrating quiet luxury and Indian regal heritage. From heritage uncut Polki suites to everyday waterproof gold chains, each piece is crafted for your most cherished moments.

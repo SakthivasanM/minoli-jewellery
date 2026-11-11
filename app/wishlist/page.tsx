@@ -69,8 +69,8 @@ export default function WishlistPage() {
                 key={product.id}
                 className="bg-white border border-ivory-300 rounded-sm overflow-hidden flex flex-col justify-between shadow-soft hover:shadow-luxury transition-all"
               >
-                <div className="relative aspect-4/5 w-full bg-ivory-100">
-                  <Link href={`/product/${product.slug}`} className="block w-full h-full">
+                <div className="relative aspect-[4/5] min-h-[240px] w-full bg-ivory-100">
+                  <Link href={`/product/${product.slug}`} className="block relative w-full h-full">
                     <Image
                       src={product.images[0]}
                       alt={product.name}

@@ -11,8 +11,8 @@
 
 @layer base {
   body {
-    color: #292929;
-    background-color: #FFFFFF;
+    color: #262021;
+    background-color: #FAF7F2;
     font-family: var(--font-poppins);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -31,20 +31,20 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #FAF7F0;
+  background: #FAF7F2;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C6A15B;
+  background: #B88746;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #B89556;
+  background: #A16F3B;
 }
 
-/* Smooth selection highlight in champagne gold */
+/* Smooth selection highlight in champagne silk gold */
 ::selection {
-  background: #EBDDBF;
-  color: #292929;
+  background: #EAD7C3;
+  color: #4A0B18;
 }

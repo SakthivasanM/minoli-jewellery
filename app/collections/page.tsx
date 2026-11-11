@@ -55,7 +55,7 @@ export default function CollectionsPage() {
             >
               {/* Banner Image (7 cols) */}
               <div
-                className={`lg:col-span-7 relative aspect-16/10 rounded-sm overflow-hidden shadow-luxury ${
+                className={`lg:col-span-7 relative aspect-[16/10] min-h-[260px] rounded-sm overflow-hidden shadow-luxury ${
                   isReversed ? 'lg:order-2' : 'lg:order-1'
                 }`}
               >

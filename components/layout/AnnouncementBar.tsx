@@ -17,11 +17,11 @@ export function AnnouncementBar() {
   if (!isVisible) return null;
 
   return (
-    <aside aria-label="Announcements" className="relative bg-charcoal-900 text-ivory-100 text-xs tracking-wider border-b border-champagne-500/20 py-2 px-4 transition-all z-50">
+    <aside aria-label="Announcements" className="relative bg-velvet-950 text-champagne-100 text-xs tracking-wider border-b border-champagne-400/30 py-2 px-4 transition-all z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="hidden sm:flex items-center space-x-2 text-champagne-400">
-          <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-          <span className="uppercase text-[10px] font-semibold tracking-widest text-champagne-400">MINOLI MAISON</span>
+          <Sparkles className="w-3.5 h-3.5 animate-pulse text-champagne-300" />
+          <span className="uppercase text-[10px] font-semibold tracking-widest text-champagne-300">MINOLI MAISON</span>
         </div>
 
         <div className="flex-1 text-center font-normal px-2 truncate flex items-center justify-center space-x-2">

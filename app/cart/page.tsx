@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Trash2, Plus, Minus, ShoppingBag, ArrowRight, MessageCircle, ShieldCheck, Truck } from 'lucide-react';
+import { Trash2, Plus, Minus, ShoppingBag, ArrowRight, MessageCircle, ShieldCheck, Truck, Sparkles } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 import { formatPrice, generateCartWhatsAppUrl, WHATSAPP_CONFIG } from '@/lib/whatsapp';
 
@@ -232,6 +232,10 @@ export default function CartPage() {
                 <div className="flex items-center space-x-2">
                   <Truck className="w-4 h-4 text-champagne-600 shrink-0" />
                   <span>Insured transit with real-time tracking</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Sparkles className="w-4 h-4 text-champagne-600 shrink-0" />
+                  <span>Signature royal velvet gift box & suede travel pouch</span>
                 </div>
               </div>
             </div>

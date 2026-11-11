@@ -10,43 +10,61 @@ module.exports = {
     extend: {
       colors: {
         champagne: {
-          50: '#FBF9F4',
-          100: '#F6F1E6',
-          200: '#ECE0C9',
-          300: '#DECB9D',
-          400: '#D2B674',
-          500: '#C6A15B', // Primary Champagne Gold
-          600: '#B89556', // Highlight Muted Gold
-          700: '#94753F',
-          800: '#755B32',
-          900: '#523E22',
+          50: '#FAF6F0',
+          100: '#F5ECE1',
+          200: '#EAD7C3',
+          300: '#D8B896',
+          400: '#C69D6E',
+          500: '#B88746', // Burnished Antique Gold from MINOLI Logo
+          600: '#A16F3B',
+          700: '#87582B',
+          800: '#6B431D',
+          900: '#4D2E12',
+        },
+        velvet: {
+          50: '#FDF5F6',
+          100: '#F9E6E9',
+          200: '#F0C4CB',
+          300: '#E093A0',
+          400: '#C6576C',
+          500: '#962840',
+          600: '#7A1A2F',
+          700: '#601222', // Royal Velvet Wine
+          800: '#4A0B18', // Signature Box Interior Bordeaux
+          900: '#33060E',
+          950: '#1F0308',
         },
         ivory: {
           50: '#FFFFFF',
-          100: '#FCFAF6',
-          200: '#FAF7F0', // Secondary Warm Ivory
-          300: '#F3EDE1',
-          400: '#E9DFCF', // Accent Soft Beige
-          500: '#DDD0BA',
+          100: '#FAF7F2', // Soft Cashmere Cream from Brand Packaging
+          200: '#F4EFE6', // Silk Drape Nude
+          300: '#EAE2D5',
+          400: '#DFD3C1',
+          500: '#CEBEA6',
         },
         charcoal: {
-          50: '#F4F4F5',
-          100: '#E4E4E7',
-          200: '#A1A1AA',
-          300: '#71717A',
-          400: '#52525B',
-          500: '#3F3F46',
-          600: '#2F2F32',
-          700: '#292929', // Text Deep Charcoal
-          800: '#1F1F21',
-          900: '#151516',
-          950: '#0C0C0D',
+          50: '#F7F6F5',
+          100: '#EAE8E6',
+          200: '#AFA9A6',
+          300: '#7A7371',
+          400: '#5A5351',
+          500: '#423B3A',
+          600: '#322B2A',
+          700: '#262021', // Warm Espresso Charcoal
+          800: '#1E1819',
+          900: '#161213',
+          950: '#0E0B0C',
         },
         gold: {
-          DEFAULT: '#C6A15B',
-          light: '#DECB9D',
-          dark: '#B89556',
+          DEFAULT: '#B88746',
+          light: '#D8B896',
+          dark: '#A16F3B',
         }
+      },
+      aspectRatio: {
+        '4/5': '4 / 5',
+        '3/4': '3 / 4',
+        '16/10': '16 / 10',
       },
       fontFamily: {
         serif: ['var(--font-playfair)', 'Georgia', 'serif'],
